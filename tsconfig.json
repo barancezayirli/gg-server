@@ -8,6 +8,21 @@
     },
     {
       "path": "./apps/gg-gateway"
+    },
+    {
+      "path": "./libs/shared/event-bus"
+    },
+    {
+      "path": "./libs/shared/types"
+    },
+    {
+      "path": "./libs/modules/dungeon-engine"
+    },
+    {
+      "path": "./libs/modules/repository"
+    },
+    {
+      "path": "./libs/modules/consumer"
     }
   ]
 }
