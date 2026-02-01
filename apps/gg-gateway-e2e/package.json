@@ -1,0 +1,26 @@
+{
+  "name": "@gg-server/gg-gateway-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@gg-server/gg-gateway"
+    ],
+    "targets": {
+      "e2e": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{projectRoot}/test-output/jest/coverage"
+        ],
+        "options": {
+          "jestConfig": "apps/gg-gateway-e2e/jest.config.cts",
+          "passWithNoTests": true
+        },
+        "dependsOn": [
+          "@gg-server/gg-gateway:build",
+          "@gg-server/gg-gateway:serve"
+        ]
+      }
+    }
+  }
+}
